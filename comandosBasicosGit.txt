@@ -1,0 +1,76 @@
+***************** GIT *********************
+
+git config --global user.name "Jânio Gameleira"
+
+git config --global user.email "jsgj1@aluno.ifal.edu.br"
+
+mkdir git-course 
+
+cd git-course/
+
+git init
+
+git status
+
+git add "nome da branch"
+
+git commit -m "add readme.md" #boa pratica colocar nos comentarios o que você de fato fez.
+
+git log
+
+git log --decorate
+
+git log --author="nome do individuo"
+
+git shortlog
+
+git log --graph
+
+git show 41e9dc030db3056fad966f48d881b3ea5eb108da
+
+git diff #mostra a atualização antes mesmo de ser adicionada
+
+git diff --name-only
+
+git checkout nome do arquivo #modificar os arquivos ainda no estado de edição
+
+git reset HEAD nome do arquivo
+
+git reset --soft --mixed --hard
+
+git push -u origin master 
+
+
+
+*******************	   BRANCHS 	*********************
+
+git checkout -b "nome da branch"
+
+git branch
+
+Navegando entre as branchs
+git checkout "nome da branch"
+
+Deletando uma branch
+git branch -D "nome da branch"
+
+mkdir rebase-merge
+
+git merge "nome da branch"
+
+git rebase "nome da branch"
+
+
+
+******************          GIT FLOW    **********************
+
+git flow init Obs:"Dentro do repositorio local que vai ser utilizado"
+
+
+Feature
+git flow feature start "nome da feature ou branch"
+
+git flow feature finish "nome da feature"
+
+Release
+git flow release start 0.1.0
